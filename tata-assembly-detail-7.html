@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width,initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fahim Radiator | Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylefrs.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+    <a href="#section-1" class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+          </svg>
+        </a>
+        <div class="header sticky" >
+        <div class="container">
+            <div class="naVbar sticky-naVbar">
+                <div class="logo">
+                   <a href="index.html"><img src="images/frs.logo.png" alt="Fahim Rediator" width="120px"></a>
+
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productsfrs.html">PRODUCTS</a></li>
+                        <li><a href="aboutfrs.html">ABOUT</a></li>
+                        <li><a href="contactsfrs.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menuicon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- featured products  -->
+    <div class="small-container single-product"id="section-1"  >
+       
+        <div class="row">
+            <div class="col2">
+                <img src="images/tata-407.jpg">
+            </div>
+              <div class="col2">   
+                 <h1>Tata 407</h1>
+                 <!-- <p class="detail-p"></p> -->
+                 <h4>Price:5,500 BDT</h4>
+                 <a href="detail-buy.html" class="btn">Buy Now</a>
+                 <h3>Product details<i class="fa fa-indent" aria-hidden="true"></i></h3>
+                 <br>
+                 <p class="detail-p" >
+                    Material:	   Alumuniam
+                    <br>
+                    Coolant Used:  Synthetic Liquid
+                    <br>
+                    Type:	       Standard
+                    <br>
+                    Tube Type:	   Seameless
+                  
+                    <br>
+                    Condition:	   Old  
+                 </p>
+              </div>       
+        </div>
+
+    </div>
+
+
+       
+          <!-- featured products  -->
+    <div class="small-container ">
+        <h2 class="tittle">More Products</h2>
+        <div class="row">
+
+          
+            <div class="col4">
+              <a href="radiator-core-copper-1.html"> <img src="images/radiator core (copper).png">
+                <h4>Radiator Core (copper)</h4></a> 
+
+            </div>
+            <div class="col4">
+                <a href="radiator-core-almuniam-1.html">  <img src="images/radiator core (almuniam).png">
+                <h4>Radiator Core (aluminiam)</h4></a> 
+            </div>
+            <div class="col4">
+                <a href="air-cooler.html">   <img src="images/air cooler.png">
+                <h4>Air Cooler</h4></a> 
+
+            </div>
+            <div class="col4">
+                <a href="hydraulic-oil-cooler.html">  <img src="images/hydraulic oil cooler.jpg">
+                <h4> Hydraulic Oil Cooler</h4></a> 
+
+            </div>
+        
+            <div class="col4">
+                <a href="other-products.html"> <img src="images/other products.png">
+                <h4>Other Products</h4></a>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footercol4">
+                    <img src="images/frs.logo.png" width="104px">
+                    <p>We assure you the best radiator and service.</p>
+                </div>
+                <div class="footercol4">
+
+                    <h3>OUR STORE</h3>
+
+                    <p>Momtaz Complex,Dighirpar Road ,Dewanhat,Chattogram.</p>
+                </div>
+                <div class="footercol4">
+
+                    <h3>OUR SERVICE CENTER</h3>
+
+                    <p>901,D.T Road,Aksarabad,Double Mooring,Chattogram.</p>
+                </div>
+                <div class="footercol4">
+
+                    <h3>CONTACT US</h3>
+
+                    <br>
+                    <a href="tel:+8801680668706"><img src="images/call.png" width="34px"></a>
+                    <a href="https://wa.me/8801680668706"> <img src="images/whatsapp.png.png" width="34px"></a>
+                    <a href="mailto:fahim.radiator.service@gmail.com"><img src="images/mail.png.png" width="35px"></a>
+
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright 2021-All rights reserved </p>
+        </div>
+    </div>
+
+
+</body>
+<!-- js for toogle menu  -->
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+            menuitems.style.maxHeight = "200px";
+        }
+        else {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<!-- js for form  -->
+
+
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            status.innerHTML = "Thanks for your submission!";
+            status.classList.add("succes")
+            form.reset()
+
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+</html>
