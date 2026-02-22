@@ -358,6 +358,11 @@ filter: none;
 .footercol4 a{
     display: inline-block;
 }
+.footer .copyright span{
+color: green;
+font-size: 18px
+
+}
 
 
 /* contact page form  */
